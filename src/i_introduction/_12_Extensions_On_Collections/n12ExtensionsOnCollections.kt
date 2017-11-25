@@ -17,7 +17,10 @@ fun todoTask12(): Nothing = TODO(
 )
 
 fun task12(): List<Int> {
-    todoTask12()
-    return arrayListOf(1, 5, 2)
+    return arrayListOf(1, 5, 2).doSort()
+}
+
+fun ArrayList<Int>.doSort(): List<Int> {
+    return this.sortedDescending();
 }
 
